@@ -24,7 +24,7 @@ app = FastAPI(
 )
 
 # CORS
-origins = get_cors_origins()
+origins = ["https://skillpickai.netlify.app/","http://localhost:5173"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
